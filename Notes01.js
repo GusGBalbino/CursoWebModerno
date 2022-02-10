@@ -13,7 +13,7 @@ let prod2 = {
 console.log(prod2)
 */
 
-
+/*
  function imprimaSoma(a, b) {
      console.log(a + b)
  }
@@ -25,3 +25,42 @@ console.log(prod2)
 const sub = (a, b) => a - b
 
 console.log(sub(2, 3))
+*/
+
+
+/*
+const funcs = []
+
+for (let i = 0; i < 10; i++) {
+    funcs.push(function() {
+        console.log(i)
+    })
+}
+
+funcs[2]()
+funcs[8]()
+*/
+
+/*
+const pessoa = {
+    nome: "Yas",
+    idade: 20,
+    endereco: {
+        logradouro: "Rua Presidente P.",
+        numero: 203
+    }
+}
+
+const  { nome: n, idade : i }  = pessoa
+console.log(n, i)
+
+*/
+
+function rand({min = 0, max = 1000}) {
+    const valor = Math.random() * (max-min) + min
+    return Math.floor(valor)
+}
+
+const obj = {max: 50, min: 40}
+const obj2= { max: 960, min: 950}
+console.log(rand(obj2))
